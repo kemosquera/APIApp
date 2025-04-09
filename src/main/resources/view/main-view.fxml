@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MainController"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: #1c1c1c;">
+
+    <Label text="Enter a Martian Sol:"
+           layoutX="30" layoutY="30"
+           style="-fx-text-fill: white;" />
+
+    <TextField fx:id="solField"
+               layoutX="160" layoutY="25"
+               promptText="e.g. 1000" />
+
+    <Button fx:id="loadButton"
+            text="Load Photos"
+            layoutX="330" layoutY="25" />
+
+    <ListView fx:id="photoListView"
+              layoutX="30" layoutY="70"
+              prefWidth="540" prefHeight="300" />
+</AnchorPane>
